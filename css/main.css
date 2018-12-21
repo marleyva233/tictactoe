@@ -1,0 +1,28 @@
+td{
+	background-color: #fff;
+	border:5px solid #000;
+	height: 100px;
+	width: 100px;
+	cursor: pointer;
+}
+
+#sq1,
+#sq2,
+#sq3{
+	border-top: none;
+}
+#sq1, 
+#sq4,
+#sq7{
+	border-left: none;
+}
+#sq7, 
+#sq8,
+#sq9{
+	border-bottom: none;
+}
+#sq3, 
+#sq6,
+#sq9{
+	border-right: none;
+}
