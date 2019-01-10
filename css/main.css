@@ -10,6 +10,9 @@ td{
 td:hover{
 	background-color: #F2F3F4;
 }
+.red{
+	background-color: red;
+}
 #sq1,
 #sq2,
 #sq3{
