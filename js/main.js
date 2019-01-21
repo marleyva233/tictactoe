@@ -14,7 +14,6 @@ function playGame(cell_id){
 				cell.classList.add("blue");
 			}
 			moves++;
-			console.log(moves);
 			checkWinner();
 		}
 	}
@@ -34,7 +33,10 @@ function checkWinner(){
 	["sq1", "sq5", "sq9"],
 	["sq3", "sq5", "sq7"]
 	];
-
+	if (moves===9){
+			gameOn=false;
+			document.getElementById("winner").innerText="It's a draw! Try again!";
+	}
 	for (var i=0; i<8; i++){
 		var cell1=document.getElementById(winningCombos[i][0]).innerText.trim();
 		var cell2=document.getElementById(winningCombos[i][1]).innerText.trim();
@@ -42,11 +44,17 @@ function checkWinner(){
 		if(cell1 !=="" && cell2==cell1 && cell3==cell1){
 			document.getElementById("winner").innerText=cell1 + " won!";
 			gameOn=false;
-		}
-		if (moves===9){
-			gameOn=false;
-			document.getElementById("winner").innerText="It's a draw! Try again!";
-			console.log("game over");
+			document.getElementById(winningCombos[i][0]).classList.add("winner");
+			document.getElementById(winningCombos[i][1]).classList.add("winner");
+			document.getElementById(winningCombos[i][2]).classList.add("winner");
 		}
 	}
+}
+
+function reset(){
+	for (var i=1; i<10; i++){
+		document.getElementById("sq"+i).innerText="";
+		document.getElementById("sq"+i).classList.remove("winner");
+	}
+	gameOn=true;
 }

@@ -16,6 +16,9 @@ td:hover{
 .blue{
 	color: blue;
 }
+.winner{
+	background-color: yellow;
+}
 #sq1,
 #sq2,
 #sq3{
@@ -35,7 +38,4 @@ td:hover{
 #sq6,
 #sq9{
 	border-right: none;
-}
-.winner{
-	background-color: yellow;
 }
