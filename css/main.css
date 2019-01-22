@@ -10,10 +10,10 @@ td{
 td:hover{
 	background-color: #F2F3F4;
 }
-.red{
+.X{
 	color: red;
 }
-.blue{
+.O{
 	color: blue;
 }
 .winner{
