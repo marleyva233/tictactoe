@@ -39,6 +39,7 @@ function checkWinner(){
 		var cell2=getCell(winningCombos[i][1]);
 		var cell3=getCell(winningCombos[i][2]);
 		if(cell1 !=="" && cell2==cell1 && cell3==cell1){
+			document.getElementById("board").style.display="none";
 			document.getElementById("winner").innerHTML=cell1 + " <h1>won!</h1>";
 			gameOn=false;
 			markWinner(winningCombos[i]);
@@ -58,5 +59,6 @@ function reset(){
 	gameOn=true;
 	player="<img src='img/cat1.jpeg' class='w-100'>";
 	moves=0;
+	document.getElementById("board").style.display="initial";
 	document.getElementById("winner").innerText="";
 }
