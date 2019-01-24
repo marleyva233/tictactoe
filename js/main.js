@@ -1,4 +1,6 @@
 var player="<img src='img/cat1.jpeg' class='w-100'>";
+var dog="<img src='img/dog1.jpeg' class='w-100'>";
+var cat="<img src='img/cat1.jpeg' class='w-100'>";
 var gameOn=true;
 var moves=0;
 
@@ -12,7 +14,7 @@ function playGame(cell_id){
 		if(getCell(cell_id)==""){
 			cell.innerHTML=player;
 			// cell.classList.add(player);
-			player = (player=="<img src='img/cat1.jpeg' class='w-100'>") ? "<img src='img/dog1.jpeg' class='w-100'>" : "<img src='img/cat1.jpeg' class='w-100'>";
+			player = (player==cat) ? dog : cat;
 			moves++;
 			checkWinner();
 		}
