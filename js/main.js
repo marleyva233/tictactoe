@@ -1,6 +1,6 @@
-var player="<img src='img/cat1.jpeg' class='w-100'>";
-var dog="<img src='img/dog1.jpeg' class='w-100'>";
-var cat="<img src='img/cat1.jpeg' class='w-100'>";
+var player="<img src='img/cat3.png' class='w-100'>";
+var dog="<img src='img/dog2.png' class='w-100'>";
+var cat="<img src='img/cat3.png' class='w-100'>";
 var gameOn=true;
 var moves=0;
 
@@ -59,7 +59,7 @@ function reset(){
 		document.getElementById("sq"+i).classList.remove("winner", "X", "O");
 	}
 	gameOn=true;
-	player="<img src='img/cat1.jpeg' class='w-100'>";
+	player="<img src='img/cat3.png' class='w-100'>";
 	moves=0;
 	document.getElementById("board").style.display="initial";
 	document.getElementById("winner").innerText="";
