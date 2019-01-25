@@ -1,12 +1,11 @@
-var player="<img src='img/cat3.png'>";
 var dog="<img src='img/dog2.png'>";
 var cat="<img src='img/cat3.png'>";
+var player=cat;
 var gameOn=true;
 var moves=0;
 
 function getCell(id){
 	return document.getElementById("sq"+id).innerHTML.trim();
-	console.log(document.getElementById("sq"+id).innerHTML.trim());
 }
 function playGame(cell_id){
 	if(gameOn){
@@ -43,22 +42,15 @@ function checkWinner(){
 			document.getElementById("board").style.display="none";
 			document.getElementById("winner").innerHTML=cell1 + " <h1>won!</h1>";
 			gameOn=false;
-			markWinner(winningCombos[i]);
 		}
-	}
-}
-function markWinner(combo){
-	for (var i=0; i<3; i++){
-		document.getElementById("sq"+combo[i]).classList.add("winner");
 	}
 }
 function reset(){
 	for (var i=1; i<10; i++){
 		document.getElementById("sq"+i).innerText="";
-		document.getElementById("sq"+i).classList.remove("winner", "X", "O");
 	}
 	gameOn=true;
-	player="<img src='img/cat3.png'>";
+	player=cat;
 	moves=0;
 	document.getElementById("board").style.display="initial";
 	document.getElementById("winner").innerText="";

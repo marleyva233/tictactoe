@@ -26,15 +26,6 @@ h1{
 img{
 	max-width: 300px;
 }
-.X{
-	color: red;
-}
-.O{
-	color: blue;
-}
-.winner{
-	background-color: yellow;
-}
 #sq1,
 #sq2,
 #sq3{
