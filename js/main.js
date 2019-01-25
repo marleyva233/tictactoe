@@ -1,6 +1,6 @@
-var player="<img src='img/cat3.png' class='w-100'>";
-var dog="<img src='img/dog2.png' class='w-100'>";
-var cat="<img src='img/cat3.png' class='w-100'>";
+var player="<img src='img/cat3.png'>";
+var dog="<img src='img/dog2.png'>";
+var cat="<img src='img/cat3.png'>";
 var gameOn=true;
 var moves=0;
 
@@ -13,7 +13,6 @@ function playGame(cell_id){
 		var cell=document.getElementById("sq"+cell_id);
 		if(getCell(cell_id)==""){
 			cell.innerHTML=player;
-			// cell.classList.add(player);
 			player = (player==cat) ? dog : cat;
 			moves++;
 			checkWinner();
@@ -59,7 +58,7 @@ function reset(){
 		document.getElementById("sq"+i).classList.remove("winner", "X", "O");
 	}
 	gameOn=true;
-	player="<img src='img/cat3.png' class='w-100'>";
+	player="<img src='img/cat3.png'>";
 	moves=0;
 	document.getElementById("board").style.display="initial";
 	document.getElementById("winner").innerText="";
