@@ -1,7 +1,8 @@
 body{
 	background-image: url("https://marleyva233.github.io/tictactoe/img/paws.png");
-	background-position: top center;	
-	background-repeat: repeat;
+	background-position: center;	
+	background-repeat: repeat-x;
+	font-family: 'Open Sans', sans-serif;
 }
 td{
 	background-color: #fff;
@@ -12,8 +13,18 @@ td{
 	font-size: 36px;
 	font-weight: bold;
 }
+td img{
+	width: 90px;
+	height: 90px;
+}
 td:hover{
 	background-color: #F2F3F4;
+}
+h1{
+	font-family: 'Pacifico', cursive;
+}
+img{
+	max-width: 300px;
 }
 .X{
 	color: red;
