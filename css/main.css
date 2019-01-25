@@ -1,3 +1,8 @@
+body{
+	background-image: url("https://marleyva233.github.io/tictactoe/img/paws.png");
+	background-position: top center;	
+	background-repeat: repeat;
+}
 td{
 	background-color: #fff;
 	border:5px solid #000;
