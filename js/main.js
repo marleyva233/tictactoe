@@ -1,5 +1,5 @@
 var dog="<img src='img/dog2.png'>";
-var cat="<img src='img/cat3.png'>";
+var cat="<img src='img/cat2.jpg'>";
 var player=cat;
 var gameOn=true;
 var moves=0;
